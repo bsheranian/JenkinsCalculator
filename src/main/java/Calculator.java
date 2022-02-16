@@ -38,8 +38,16 @@ class Calculator {
     .
     etc
      */
-    int fibonacciNumberFinder(int n){
-        return 0;
+    int fibonacciNumberFinder(int n) {
+        int result = 1;
+        int last = 1;
+        int current = 1;
+        for (int i = 2; i < n; i++) {
+            result = last + current;
+            last = current;
+            current = result;
+        }
+        return result;
     }
 
 
