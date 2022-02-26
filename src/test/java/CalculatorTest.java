@@ -22,7 +22,6 @@ public class CalculatorTest {
     @Test
     public void subtractTest(){
         Calculator myCalculator = new Calculator();
-        assertTrue(false);
 
         assertEquals(-2 , myCalculator.subtract(2,4));
         assertEquals(2 , myCalculator.subtract(4,2));
